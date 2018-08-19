@@ -506,7 +506,8 @@ you should place your code here."
 (exec-path-from-shell-copy-env "SSH_AGENT_PID")
 (exec-path-from-shell-copy-env "SSH_AUTH_SOCK")
 
- 
+;;; モードラインに時刻を表示する
+(display-time)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
