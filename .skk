@@ -1,0 +1,42 @@
+;; skk-azik
+(setq skk-use-azik t)
+;; if you use us keyboard, replace jp106 to en
+(setq skk-azik-keyboard-type 'jp106)
+(setq-default skk-kutouten-type 'jp-en)
+
+;; skk
+;; sudo apt install ddskk skkdic for linux
+;; (require 'skk-auto)
+;; (global-set-key (kbd "C-x C-j") 'skk-mode)
+
+;; require utf-8 SKK-JISYO
+(setq skk-jisyo-code 'utf-8)
+
+;; skk hokan
+(setq skk-dcomp-activate t)
+
+;; skk-jisho
+(if (eq system-type 'gnu/linux)
+(setq skk-large-jisyo "~/SKK-JISYO.L.utf8"))
+
+(if (eq system-type 'windows-nt)
+    (setq skk-large-jisyo "~/.emacs.d/SKK-JISYO.L"))
+
+;; skk sticky-key
+; win
+;(setq skk-sticky-key [non-convert])
+; linux
+(setq skk-sticky-key [muhenkan])
+
+;; skk kutouten
+(setq-default skk-kutouten-type 'jp-en)
+
+;; skk function key
+(setq skk-j-mode-function-key-usage 'conversion)
+
+;; skk annotation
+(setq skk-show-annotation t)
+
+;; auto close brackets
+(setq-default skk-auto-insert-paren t)
+
