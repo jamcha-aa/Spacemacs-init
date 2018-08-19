@@ -60,7 +60,8 @@ values."
                                       wc-mode
                                       yatex
                                       navi2ch
-                                      exwm)
+                                      exwm
+                                      switch-window)
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
    ;; A list of packages that will not be installed and loaded.
