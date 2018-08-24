@@ -486,6 +486,10 @@ you should place your code here."
 ;; 'allではなくtにすると現在選択中のhunkのみ強調表示する
 (setq magit-diff-refine-hunk 'all)
 
+;; org-markdown
+(eval-after-load "org"
+  '(require 'ox-md nil t))
+
 ;; exwm
 (require 'exwm)
 (require 'exwm-config)
