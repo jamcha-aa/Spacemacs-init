@@ -512,7 +512,10 @@ you should place your code here."
 
 ;;; モードラインに時刻を表示する
 (display-time)
-  )
+
+;;;https://github.com/emacs-helm/helm/issues/550
+(setq helm-exit-idle-delay 0)
+)
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
