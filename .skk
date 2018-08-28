@@ -1,8 +1,7 @@
 ;; skk-azik
 (setq skk-use-azik t)
-;; if you use us keyboard, replace jp106 to en
+;; if you use us keyboard, replace jp106 to us101
 (setq skk-azik-keyboard-type 'jp106)
-(setq-default skk-kutouten-type 'jp-en)
 
 ;; skk
 ;; sudo apt install ddskk skkdic for linux
@@ -25,8 +24,10 @@
 ;; skk sticky-key
 ; win
 ;(setq skk-sticky-key [non-convert])
-; linux
+; linux, jp keyboard
 (setq skk-sticky-key [muhenkan])
+; linux, us keyboard
+(setq skk-sticky-key [f12])
 
 ;; skk kutouten
 (setq-default skk-kutouten-type 'jp-en)

@@ -516,9 +516,12 @@ you should place your code here."
 
 ;;; モードラインに時刻を表示する
 (display-time)
+<<<<<<< HEAD
+=======
 
 ;;;https://github.com/emacs-helm/helm/issues/550
 (setq helm-exit-idle-delay 0)
+>>>>>>> 36ce02ddf6fb03b0b2d1b4daddb39cd2488ae8b6
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
