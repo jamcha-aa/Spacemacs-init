@@ -460,8 +460,8 @@ you should place your code here."
 
 ;; navi2ch
 (if (eq system-type 'gnu/linux)
-                                        ; once you get board.txt, remove comment below
-    (setq navi2ch-net-http-proxy "localhost:8080")
+  ; once you get board.txt, remove comment below
+  ;(setq navi2ch-net-http-proxy "localhost:8080")
   (setq navi2ch-article-max-buffers 5)
   (setq navi2ch-article-auto-expunge t)
   ;; https://mevius.5ch.net/test/read.cgi/unix/1405127170/838
@@ -516,12 +516,6 @@ you should place your code here."
 
 ;;; モードラインに時刻を表示する
 (display-time)
-<<<<<<< HEAD
-=======
-
-;;;https://github.com/emacs-helm/helm/issues/550
-(setq helm-exit-idle-delay 0)
->>>>>>> 36ce02ddf6fb03b0b2d1b4daddb39cd2488ae8b6
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
